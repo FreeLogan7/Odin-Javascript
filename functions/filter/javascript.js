@@ -12,7 +12,10 @@ const names = [
   const para = document.createElement("p");
   
   const shortNames = names.filter((name) => name.length < 5);
-  para.textContent = shortNames;
+  
+
+  const formattedShortNames = shortNames.join(" ");
+  para.textContent = formattedShortNames;
 
   document.body.innerHTML = " ";
   document.body.appendChild(para);
