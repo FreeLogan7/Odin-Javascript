@@ -23,3 +23,12 @@ blue.textContent = "I'm a blue h3";
 blue.style.cssText = "color: blue;";
 
 container.appendChild(blue);
+
+//CLASS multipleElements
+const multipleElements = document.createElement("div")
+multipleElements.classList.add("border");
+multipleElements.style.backgroundColor = "pink";
+multipleElements.textContent ="sda";
+multipleElements.style.border = "solid black"; 
+
+container.appendChild(multipleElements);
