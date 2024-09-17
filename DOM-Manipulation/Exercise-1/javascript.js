@@ -28,7 +28,19 @@ container.appendChild(blue);
 const multipleElements = document.createElement("div")
 multipleElements.classList.add("border");
 multipleElements.style.backgroundColor = "pink";
-multipleElements.textContent ="sda";
 multipleElements.style.border = "solid black"; 
 
+//Title of pink border
+const borderTitle = document.createElement("h1");
+borderTitle.textContent = "I'm in a div";
+multipleElements.appendChild(borderTitle);
+
+//Header of pink border
+const borderHeader = document.createElement("p");
+borderHeader.textContent = "ME TOO!";
+multipleElements.appendChild(borderHeader);
+
+//Connect whole div to main container 
 container.appendChild(multipleElements);
+
+
